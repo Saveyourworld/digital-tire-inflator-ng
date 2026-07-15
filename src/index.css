@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #2563eb; /* Keep this for buttons/links */
+  --color-brand-accent: #f59e0b;
+  --font-heading: 'Outfit', sans-serif;
+  --spacing-128: 32rem;
+  --radius-super: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Change this from var(--color-brand-primary) to white or a soft slate */
+  background-color: #ffffff; 
+  color: #0f172a; /* Use a dark slate for text instead of pure black for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Add a subtle loading fade-in so the page doesn't 'jump' on load */
+body {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
