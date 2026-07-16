@@ -1,7 +1,8 @@
 {
-  "name": "fan-page",
+  "name": "digital-tire-inflator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Premium landing page for the Smart Portable Digital Tire Inflator by Gemini Auto Tech NG.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -41,9 +42,15 @@
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.10"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "eslint.config.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tire-inflator",
+    "automotive",
+    "landing-page",
+    "react",
+    "vite",
+    "nigeria"
+  ],
+  "author": "Gemini Auto Tech NG",
   "license": "ISC"
 }

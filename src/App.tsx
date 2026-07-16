@@ -11,24 +11,24 @@ function App() {
   const [openModal, setOpenModal] = useState<"privacy" | "terms" | null>(null);
 
   return (
-    /* The 'orange-50' and 'orange-600' accents match the fan branding.
+    /* Swapped the old fan orange for a sleek automotive blue/slate theme.
       'overflow-x-hidden' prevents mobile side-scrolling.
     */
-    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased overflow-x-hidden selection:bg-orange-100 selection:text-orange-900">
+    <div className="min-h-screen bg-white text-slate-900 font-sans antialiased overflow-x-hidden selection:bg-blue-100 selection:text-blue-900">
       
-      {/* 1. Hero: The main 'Stay Cool' value proposition */}
+      {/* 1. Hero: The main 'Never get stranded with a flat tire' value proposition */}
       <HeroSection />
 
-      {/* 2. Social Proof: WhatsApp reviews and customer feedback */}
+      {/* 2. Social Proof: WhatsApp reviews from drivers and car owners */}
       <Testimonials />
 
-      {/* 3. Features: 12H Battery, Portability, and USB Charging */}
+      {/* 3. Features: Digital Display, Auto Shut-off, Fast Inflation, Portable Power */}
       <Features />
 
-      {/* 4. Product Details: Video of the fan and 'In the Box' list */}
+      {/* 4. Product Details: Video of the inflator in action and 'In the Box' nozzles/hoses */}
       <ProductBox />
 
-      {/* 5. Order Section: The high-conversion Pay-on-Delivery form */}
+      {/* 5. Order Section: The high-conversion Pay-on-Delivery form (Original: 80k, Promo: 60k) */}
       <OrderForm />
 
       {/* 6. Footer: Branding, Copyright, and Legal Modals */}

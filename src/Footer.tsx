@@ -18,8 +18,8 @@ export default function Footer({ openModal, setOpenModal }: FooterProps) {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           
           <div className="text-center md:text-left">
-            <p className="font-bold text-white text-lg">Gemini Solar Tech NG</p>
-            <p className="mt-1">Quality cooling solutions for every Nigerian home.</p>
+            <p className="font-bold text-white text-lg">Gemini Auto Tech NG</p>
+            <p className="mt-1">Premium smart automotive solutions to keep Nigerian drivers moving.</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6">
@@ -40,12 +40,12 @@ export default function Footer({ openModal, setOpenModal }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© 2026 Gemini Solar Tech NG. All rights reserved.</p>
+          <p>© 2026 Gemini Auto Tech NG. All rights reserved.</p>
           
-          {/* Trust Badges for the Nigerian Market */}
+          {/* Trust Badges matching the free shipping updates */}
           <div className="flex items-center gap-4 opacity-60 grayscale hover:grayscale-0 transition">
             <span className="text-[10px] font-bold border border-gray-700 px-2 py-1 rounded">PAY ON DELIVERY</span>
-            <span className="text-[10px] font-bold border border-gray-700 px-2 py-1 rounded">NATIONWIDE SHIPPING</span>
+            <span className="text-[10px] font-bold border border-gray-700 px-2 py-1 rounded">100% FREE SHIPPING</span>
           </div>
         </div>
 
@@ -71,15 +71,15 @@ export default function Footer({ openModal, setOpenModal }: FooterProps) {
             <div className="space-y-4 text-left text-gray-700">
               <section>
                 <h4 className="font-bold text-gray-900">1. Operations</h4>
-                <p>We operate from Lagos, Nigeria. Pay-On-Delivery is available for confirmed orders in major cities.</p>
+                <p>We operate from Lagos, Nigeria. Pay-on-delivery is available for confirmed orders in all accessible states.</p>
               </section>
               <section>
-                <h4 className="font-bold text-gray-900">2. Delivery Timelines</h4>
-                <p>Lagos: 24–48 hours. Other States: 3–5 working days. You will receive a call from our agent before delivery.</p>
+                <h4 className="font-bold text-gray-900">2. Free Delivery & Timelines</h4>
+                <p>Delivery is 100% free nationwide. Lagos: 24–48 hours. Other States: 3–5 working days. You will receive a call from our dispatch agent before delivery is attempted.</p>
               </section>
               <section>
-                <h4 className="font-bold text-gray-900">3. Returns</h4>
-                <p>Returns are accepted within 7 days for factory defects only. Items must be in their original packaging.</p>
+                <h4 className="font-bold text-gray-900">3. Returns & Warranty</h4>
+                <p>We accept returns within 7 days for factory defects only. The item must be unused, returned with all included adapters/nozzles, and kept in its original packaging.</p>
               </section>
             </div>
           </Modal>

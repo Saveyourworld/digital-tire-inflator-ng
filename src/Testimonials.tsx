@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const data = [
-  { text: "This fan saved me during the grid collapse. The battery actually lasts all night!", author: "- Chuks from Lagos" },
-  { text: "Very solid build. I received mine in Port Harcourt just 3 days after ordering.", author: "- Preye from Rivers" },
-  { text: "The air output is very strong. I use it for my baby's room and it's quiet.", author: "- Amina from Abuja" },
-  { text: "Real value for money at ₦35,000. Customer service was polite and delivery was fast.", author: "- Tobi from Ikeja" },
-  { text: "Exactly what I saw in the video is what I got. Thank you!", author: "- Nneka from Enugu" },
+  { text: "This inflator saved me on the third mainland bridge. I noticed a low tire, preset it to 32 psi, and it stopped exactly when full!", author: "- Chuks from Lagos" },
+  { text: "Very premium build. I received mine in Port Harcourt just 3 days after ordering and it's already inflated my SUV tire twice.", author: "- Preye from Rivers" },
+  { text: "No more long queues at vulcanizers. The digital gauge is incredibly accurate, and the built-in light is bright enough for night emergencies.", author: "- Amina from Abuja" },
+  { text: "Absolute lifesaver for interstate trips. Excellent value for money at ₦60,000. Customer service was polite and delivery was super fast.", author: "- Tobi from Ikeja" },
+  { text: "Exactly what I saw in the demo video is what I got. Comes with all the nozzles for my kid's bicycle and football too!", author: "- Nneka from Enugu" },
 ];
 
 export default function Testimonials() {
@@ -23,7 +23,7 @@ export default function Testimonials() {
     <section className="py-12 lg:py-24 px-4 bg-gray-50">
       <div className="max-w-md lg:max-w-6xl mx-auto">
         <h2 className="text-3xl lg:text-4xl font-black text-center mb-10 lg:mb-16 text-gray-900">
-          Trusted by 1,000+ Nigerians
+          Trusted by 1,000+ Nigerian Drivers
         </h2>
 
         {/* 1. Desktop Layout: Image on Left, Testimonials on Right */}
@@ -31,14 +31,14 @@ export default function Testimonials() {
           
           {/* THE IMAGE (WhatsApp Review) */}
           <div className="w-full lg:w-5/12">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 rotate-1 lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-200 rotate-1 lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
               <img
-                src="/FAN.JPG"
+                src="/inflator.JPG"
                 alt="WhatsApp Customer Review"
                 className="w-full h-auto object-cover"
               />
-              <div className="p-4 bg-white text-center italic text-sm text-gray-500">
-                Everybody loves this product
+              <div className="p-4 bg-white text-center italic text-sm text-gray-500 font-medium">
+                Every driver loves this device
               </div>
             </div>
           </div>
@@ -46,12 +46,12 @@ export default function Testimonials() {
           {/* THE TESTIMONIALS */}
           <div className="w-full lg:w-7/12">
             {/* MOBILE VIEW: Single sliding card (Visible on mobile, hidden on laptop) */}
-            <div className="lg:hidden bg-white p-8 rounded-2xl shadow-lg border border-orange-100 h-48 flex flex-col justify-center">
+            <div className="lg:hidden bg-white p-8 rounded-3xl shadow-lg border border-blue-100 h-52 flex flex-col justify-center">
               <span className="text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</span>
-              <p className="italic text-gray-700 text-lg leading-relaxed">
+              <p className="italic text-gray-700 text-base leading-relaxed">
                 "{data[index].text}"
               </p>
-              <p className="font-black mt-3 text-orange-600">{data[index].author}</p>
+              <p className="font-black mt-3 text-blue-600">{data[index].author}</p>
             </div>
 
             {/* DESKTOP VIEW: Grid of reviews (Hidden on mobile, visible on laptop) */}

@@ -23,14 +23,15 @@ export default function OrderForm() {
   const [selectedState, setSelectedState] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
 
-  const originalPrice = 45000;
-  const unitPrice = 40000;
+  // Price points updated for the Portable Tire Inflator (60k promo vs 80k original)
+  const originalPrice = 80000;
+  const unitPrice = 60000;
   
   const originalTotal = originalPrice * quantity;
   const productTotal = unitPrice * quantity;
   const totalSaved = originalTotal - productTotal;
 
-  // Delivery is now universally free
+  // Delivery is universally free
   const grandTotal = productTotal;
 
   const whatsappNumber = "2349064543927";
@@ -45,7 +46,7 @@ export default function OrderForm() {
     const formData = new FormData(form);
 
     const message = `
-🛒 *NEW ORDER (PAY ON DELIVERY)*
+🛒 *NEW ORDER (TIRE INFLATOR - PAY ON DELIVERY)*
 👤 Name: ${formData.get("customer_name")}
 📞 Phone: ${formData.get("customer_phone")}
 📍 Address: ${formData.get("customer_address")}, ${selectedState}
@@ -105,7 +106,7 @@ export default function OrderForm() {
           </h2>
           <p className="text-xl text-slate-600 leading-relaxed">
             We trust you. That's why we are shipping this directly to your doorstep without requesting a dime upfront. 
-            <span className="font-bold text-slate-900"> You only pay when you have received and inspected your package.</span>
+            <span className="font-bold text-slate-900"> You only pay when you have received and inspected your device.</span>
           </p>
         </div>
 
@@ -161,11 +162,11 @@ export default function OrderForm() {
                 <span className="text-2xl">🛡️</span>
                 <div>
                   <p className="text-sm font-bold text-green-800">100% Money-Back Guarantee</p>
-                  <p className="text-xs text-green-700">If your fan is not delivered in perfect condition, you don't pay a dime.</p>
+                  <p className="text-xs text-green-700">If your device is not delivered in perfect working condition, you don't pay a dime.</p>
                 </div>
               </div>
 
-              {/* FINAL BREAKDOWN - Updated for Free Delivery */}
+              {/* FINAL BREAKDOWN */}
               <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200">
                 <h4 className="text-sm font-bold mb-3 flex items-center gap-2 text-slate-800">
                   <span className="bg-blue-100 p-1 rounded text-xs">📋</span> Final Breakdown
@@ -197,7 +198,7 @@ export default function OrderForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-2xl text-lg lg:text-xl font-black shadow-xl shadow-blue-200 transition-all active:scale-95 disabled:bg-slate-300 flex justify-center items-center gap-2 mt-4"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 rounded-2xl text-lg lg:text-xl font-black shadow-xl shadow-blue-200 transition-all active:scale-95 disabled:bg-slate-300 flex justify-center items-center gap-2 mt-4 cursor-pointer"
               >
                 {loading ? (
                   "Processing Order..."
@@ -219,12 +220,12 @@ export default function OrderForm() {
             <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-6">✓</div>
             <h3 className="text-2xl font-black text-slate-900">Order Placed!</h3>
             <p className="text-slate-600 mt-2 mb-6">
-              Your information has been logged. If your browser didn't automatically open WhatsApp, your order is still secure.
+              Your details have been registered. If your web browser did not open WhatsApp automatically, your order remains safe.
             </p>
             
             <button 
               onClick={() => setShowModal(false)} 
-              className="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition-colors shadow-lg"
+              className="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition-colors shadow-lg cursor-pointer"
             >
               Back to Page
             </button>
