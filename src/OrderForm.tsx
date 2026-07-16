@@ -153,7 +153,7 @@ export default function OrderForm() {
               </div>
 
               {/* Hidden Inputs for EmailJS Variables */}
-              <input type="hidden" name="order_items" value={`${quantity} unit(s)`} />
+              <input type="hidden" name="order_items" value={`${quantity} unit(s) of Tire Inflator ⭕`} />
               <input type="hidden" name="order_total" value={grandTotal.toLocaleString()} />
               <input type="hidden" name="total_saved" value={totalSaved.toLocaleString()} />
 
