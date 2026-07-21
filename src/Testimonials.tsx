@@ -4,7 +4,7 @@ const data = [
   { text: "This inflator saved me on the third mainland bridge. I noticed a low tire, preset it to 32 psi, and it stopped exactly when full!", author: "- Chuks from Lagos" },
   { text: "Very premium build. I received mine in Port Harcourt just 3 days after ordering and it's already inflated my SUV tire twice.", author: "- Preye from Rivers" },
   { text: "No more long queues at vulcanizers. The digital gauge is incredibly accurate, and the built-in light is bright enough for night emergencies.", author: "- Amina from Abuja" },
-  { text: "Absolute lifesaver for interstate trips. Excellent value for money at ₦60,000. Customer service was polite and delivery was super fast.", author: "- Tobi from Ikeja" },
+  { text: "Absolute lifesaver for interstate trips. Excellent value for money at ₦54,999. Customer service was polite and delivery was super fast.", author: "- Tobi from Ikeja" },
   { text: "Exactly what I saw in the demo video is what I got. Comes with all the nozzles for my kid's bicycle and football too!", author: "- Nneka from Enugu" },
 ];
 

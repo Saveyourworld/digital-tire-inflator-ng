@@ -31,7 +31,7 @@ export default function HeroSection() {
             Normal Price: ₦80,000
           </p>
           <p className="text-3xl md:text-4xl lg:text-5xl font-black text-red-600 mt-1">
-            Promo Price: ₦60,000
+            Promo Price: ₦54,999
           </p>
           <p className="text-sm font-bold text-green-600 uppercase tracking-widest mt-2">
             ★ FREE NATIONWIDE SHIPPING + PAY ON DELIVERY ★

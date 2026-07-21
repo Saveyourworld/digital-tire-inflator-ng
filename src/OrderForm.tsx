@@ -25,7 +25,7 @@ export default function OrderForm() {
 
   // Price points updated for the Portable Tire Inflator (60k promo vs 80k original)
   const originalPrice = 80000;
-  const unitPrice = 60000;
+  const unitPrice = 54999;
   
   const originalTotal = originalPrice * quantity;
   const productTotal = unitPrice * quantity;
